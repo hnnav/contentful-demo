@@ -2,11 +2,11 @@ import React from "react";
 
 function Blog({title, content, img, author}) {
   return(
-    <div className='blog__wrapper'>
-      <h3>{title}</h3>
+    <div className='w-3/4 max-w-md font-body flex flex-col justify-center gap-3 bg-white p-5 rounded-md'>
+      <h3 className='font-title text-xl'>{title}</h3>
       {/* <img src=''/> */}
       <p>{content}</p>
-      <small>{author}</small>
+      <p className='text-xs'>{author}</p>
     </div>
   )
 }
