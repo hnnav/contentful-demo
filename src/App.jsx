@@ -14,7 +14,7 @@ function App() {
     }
     fetchData()
   }, [language])
-
+  
   const handleSwitchlanguage = () => {
     language === 'en-US' ? setLanguage('fi-FI') : setLanguage('en-US')
   }
@@ -36,6 +36,7 @@ function App() {
           content={blog.content}
           img={blog.image.fields.file.url}
           author={blog.author}
+          date={blog.image.sys.createdAt}
         />
       ))}
     </div>
