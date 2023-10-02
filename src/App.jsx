@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { client } from './client'
-import Blog from './blog';
+import Blog from './Blog';
 
 function App() {
   const [blogs, setBlogs] = useState([])
